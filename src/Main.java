@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.Scanner;  ////Evgeny Vasylev 336550686 | Maxim Sirotenko 328663547
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
