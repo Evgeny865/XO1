@@ -64,10 +64,10 @@ public abstract class Game {
      * @return true if the move is a winning move, false otherwise.
      */
     public boolean isWinningMove(int row, int col, char symbol) {
-        return checkDirection(row, col, 0, 1, symbol) + checkDirection(row, col, 0, -1, symbol) > 3 || // Горизонталь
-                checkDirection(row, col, 1, 0, symbol) + checkDirection(row, col, -1, 0, symbol) > 3 || // Вертикаль
-                checkDirection(row, col, 1, 1, symbol) + checkDirection(row, col, -1, -1, symbol) > 3 || // Главная диагональ
-                checkDirection(row, col, 1, -1, symbol) + checkDirection(row, col, -1, 1, symbol) > 3;  // Побочная диагональ
+        return checkDirection(row, col, 0, 1, symbol) + checkDirection(row, col, 0, -1, symbol) > 3 ||
+                checkDirection(row, col, 1, 0, symbol) + checkDirection(row, col, -1, 0, symbol) > 3 ||
+                checkDirection(row, col, 1, 1, symbol) + checkDirection(row, col, -1, -1, symbol) > 3 ||
+                checkDirection(row, col, 1, -1, symbol) + checkDirection(row, col, -1, 1, symbol) > 3;
     }
 
 
